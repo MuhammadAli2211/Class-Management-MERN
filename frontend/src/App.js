@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   
-
+{student.classId?.name || "No Class"}
   const getClasses = async () => {
     const res = await axios.get(`${API}/classes`);
     setClasses(res.data);
