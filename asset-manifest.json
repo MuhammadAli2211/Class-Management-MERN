@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Class-Management-MERN/static/css/main.d77f0b25.css",
-    "main.js": "/Class-Management-MERN/static/js/main.6de8b817.js",
+    "main.js": "/Class-Management-MERN/static/js/main.bcca2861.js",
     "static/js/453.20359781.chunk.js": "/Class-Management-MERN/static/js/453.20359781.chunk.js",
     "index.html": "/Class-Management-MERN/index.html",
     "main.d77f0b25.css.map": "/Class-Management-MERN/static/css/main.d77f0b25.css.map",
-    "main.6de8b817.js.map": "/Class-Management-MERN/static/js/main.6de8b817.js.map",
+    "main.bcca2861.js.map": "/Class-Management-MERN/static/js/main.bcca2861.js.map",
     "453.20359781.chunk.js.map": "/Class-Management-MERN/static/js/453.20359781.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d77f0b25.css",
-    "static/js/main.6de8b817.js"
+    "static/js/main.bcca2861.js"
   ]
 }
