@@ -5,8 +5,9 @@ const cors = require("cors");
 const app = express();
 
 
+
 app.use(cors({
-  origin: ["https://class-management-mern.vercel.app/"], 
+  origin: ["https://class-management-mern.vercel.app", "http://localhost:3000"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
