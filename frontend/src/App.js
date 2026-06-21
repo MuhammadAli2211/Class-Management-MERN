@@ -18,8 +18,6 @@ function App() {
     getStudents();
   }, []);
 
-  
-{student.classId?.name || "No Class"}
   const getClasses = async () => {
     const res = await axios.get(`${API}/classes`);
     setClasses(res.data);
@@ -42,8 +40,6 @@ function App() {
     getStudents();
   };
 
-  
-  
   const getStudents = async () => {
     const res = await axios.get(`${API}/students`);
     setStudents(res.data);
@@ -71,7 +67,6 @@ function App() {
     <div className="container">
       <h1> Class Management System</h1>
 
-
       <div className="card">
         <h2>Add Class</h2>
 
@@ -84,7 +79,6 @@ function App() {
 
         <button onClick={addClass}>Add Class</button>
       </div>
-
 
       <div className="card">
         <h2>Classes</h2>
@@ -102,7 +96,6 @@ function App() {
           </div>
         ))}
       </div>
-
 
       <div className="card">
         <h2>Add Student</h2>
@@ -130,18 +123,15 @@ function App() {
         <button onClick={addStudent}>Add Student</button>
       </div>
 
-
       <div className="card">
         <h2>Students</h2>
 
         {students.map((student) => (
           <div key={student._id} className="item">
-            <span>
-              <h3>Student Name:</h3>
-              {student.name} 
-                <h3>Student ID</h3>
-              {student.classId ? student.classId.name : "No Class"}
-            </span>
+            <div className="student-info">
+              <strong>Student Name:</strong> {student.name} <br />
+              <strong>Class Name:</strong> {student.classId ? student.classId.name : "No Class"}
+            </div>
 
             <button
               className="delete"
